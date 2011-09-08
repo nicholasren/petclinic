@@ -93,7 +93,7 @@
 		Uncomment this in containers (GlassFish) that do not declare this 
 		implicit definition out of the box, or change the name of the servlet mapping 
 		below to the appropriate one.
-		
+
 	<servlet>
 		<servlet-name>default</servlet-name>
 		<servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
