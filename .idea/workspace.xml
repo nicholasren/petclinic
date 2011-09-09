@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb0e3ad-cdb9-44cf-a192-c2e4ed998a35" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petclinic.iml" afterPath="$PROJECT_DIR$/petclinic.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java" afterPath="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java" />
     </list>
     <ignored path="petclinic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,19 +77,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="i_can_add_a_owner.story" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="i_can_add_a_owner.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/i_can_add_a_owner.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.5518395">
+            <state line="11" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OwnerSteps.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="OwnerSteps.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="4" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.0">
+            <state line="61" column="5" selection-start="1716" selection-end="1808" vertical-scroll-proportion="0.69730943">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,8 +125,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../simple/pom.xml" />
         <option value="$PROJECT_DIR$/../simple/src/test/java/org/nicholasren/jbehave/WebDriverTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/i_can_add_a_owner.story" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java" />
       </list>
     </option>
   </component>
@@ -696,7 +692,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="95" y="22" width="1152" height="774" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -708,11 +704,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1931097" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17303006" sideWeight="0.74390244" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2529465" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22664501" sideWeight="0.74390244" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5" sideWeight="0.9972777" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25609756" sideWeight="0.9972777" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -872,19 +868,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/i_can_add_a_owner.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="4" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="11" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/i_can_add_a_owner.story">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.5518395">
-          <folding />
+        <state line="61" column="5" selection-start="1716" selection-end="1808" vertical-scroll-proportion="0.69730943">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

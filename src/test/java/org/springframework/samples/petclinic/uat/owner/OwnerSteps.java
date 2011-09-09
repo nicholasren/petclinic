@@ -58,6 +58,7 @@ public class OwnerSteps {
     @Then("I should see $string")
     public void iShouldSee(String string) {
         assertTrue(driver.getPageSource().contains(string));
+        driver.close();
     }
 
 }
