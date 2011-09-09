@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb0e3ad-cdb9-44cf-a192-c2e4ed998a35" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/html/tutorial.html" afterPath="$PROJECT_DIR$/src/main/webapp/static/html/tutorial.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/banner-graphic.png" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/banner-graphic.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/bullet-arrow.png" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/bullet-arrow.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/pets.png" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/pets.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/springsource-logo.png" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/springsource-logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/images/submit-bg.png" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/submit-bg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/styles/petclinic.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/styles/petclinic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petclinic.iml" afterPath="$PROJECT_DIR$/petclinic.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="petclinic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,7 +80,28 @@
     <favorites_list name="petclinic" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="i_can_add_a_owner.story" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/i_can_add_a_owner.story">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.5518395">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OwnerSteps.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="4" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -102,11 +115,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/springframework/samples/petclinic/Pet.java" />
-        <option value="$USER_HOME$/projects/my-app/src/main/resources/META-INF/application.properties" />
-        <option value="$USER_HOME$/projects/my-app/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
+        <option value="$PROJECT_DIR$/../jbehave/pom.xml" />
+        <option value="$PROJECT_DIR$/../jbehave/src/test/i_can_toggle_a_cell.story" />
+        <option value="$PROJECT_DIR$/../jbehave/src/test/java/org/nicholasren/jbehave/ICanToggleACell.java" />
+        <option value="$PROJECT_DIR$/../jbehave/src/main/java/org/nicholasren/jbehave/StringRenderer.java" />
+        <option value="$PROJECT_DIR$/../jbehave/src/main/java/org/nicholasren/jbehave/Game.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/ICanAddAOwner.java" />
+        <option value="$PROJECT_DIR$/../jbehave/src/test/java/org/nicholasren/jbehave/GridSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/i_can_create_a_owner.story" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/OwnerSteps.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../simple/pom.xml" />
+        <option value="$PROJECT_DIR$/../simple/src/test/java/org/nicholasren/jbehave/WebDriverTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/i_can_add_a_owner.story" />
       </list>
     </option>
   </component>
@@ -129,24 +153,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="petclinic" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="petclinic" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -200,52 +206,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petclinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petclinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petclinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petclinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.springframework.samples.petclinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petclinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petclinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.springframework.samples.petclinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,10 +214,6 @@
               <option name="myItemId" value="petclinic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -281,6 +238,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -296,35 +257,201 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="owner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jbehave" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jbehave" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.nicholasren.jbehave" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="com.intellij.tasks.config.TaskRepositoriesConfigurable" />
+    <property name="options.lastSelected" value="project.propCompiler" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Remote.tomcat">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.springframework.samples.petclinic.uat" />
+      <recent name="org.nicholasren.jbehave" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ICanAddAOwner">
+    <configuration default="false" name="ICanToggleACell" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="jbehave" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.nicholasren.jbehave" />
+      <option name="MAIN_CLASS_NAME" value="org.nicholasren.jbehave.ICanToggleACell" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49604" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ICanAddAOwner" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="petclinic" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.springframework.samples.petclinic.uat.owner" />
+      <option name="MAIN_CLASS_NAME" value="org.springframework.samples.petclinic.uat.owner.ICanAddAOwner" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="WebDriverTest.test" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="simple" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.nicholasren.jbehave" />
+      <option name="MAIN_CLASS_NAME" value="org.nicholasren.jbehave.WebDriverTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -372,6 +499,20 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="packagepath" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -383,6 +524,22 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpecsRunConfiguration" factoryName="Specs">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="packagepath" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="sysFilter" value=".*" />
+      <setting name="exampleFilter" value=".*" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -450,6 +607,21 @@
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
     </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="version" value="false" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="false" name="tomcat" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -464,8 +636,11 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Remote.tomcat" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ICanToggleACell" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ICanAddAOwner" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WebDriverTest.test" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -521,25 +696,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1276" height="774" extended-state="6" />
-    <editor active="false" />
+    <frame x="95" y="22" width="1152" height="774" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14506927" sideWeight="0.67058825" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21434394" sideWeight="0.67058825" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39939025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1931097" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2529465" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5" sideWeight="0.9972777" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -591,102 +766,124 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/uncaughtException.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/samples/petclinic/Pet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.9927536" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.web.servlet/3.0.0.RELEASE/org.springframework.web.servlet-3.0.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="813" column="25" selection-start="35790" selection-end="35792" vertical-scroll-proportion="0.024271844">
+        <state line="19" column="31" selection-start="495" selection-end="495" vertical-scroll-proportion="0.3617021">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.web.servlet/3.0.0.RELEASE/org.springframework.web.servlet-3.0.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/annotation/AnnotationMethodHandlerAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/samples/petclinic/PetType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="401" column="0" selection-start="17344" selection-end="17344" vertical-scroll-proportion="0.024271844">
+        <state line="5" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="0.17201835">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/org.springframework.web/3.0.0.RELEASE/org.springframework.web-3.0.0.RELEASE-sources.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/samples/petclinic/Specialty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="0" selection-start="7291" selection-end="7291" vertical-scroll-proportion="0.023510972">
+        <state line="7" column="13" selection-start="166" selection-end="166" vertical-scroll-proportion="0.24082568">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/samples/petclinic/web/ClinicController.java">
+    <entry file="file://$PROJECT_DIR$/../simple/src/test/java/org/nicholasren/jbehave/i_can_toggle_a_cell.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.17050691">
+        <state line="15" column="31" selection-start="239" selection-end="239" vertical-scroll-proportion="0.54086536">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/petclinic-servlet.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/3.4.5/jbehave-core-3.4.5.jar!/org/jbehave/core/embedder/Embedder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="35" selection-start="65" selection-end="76" vertical-scroll-proportion="0.023510972">
+        <state line="191" column="0" selection-start="13347" selection-end="13347" vertical-scroll-proportion="0.6698113">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/com.springsource.javax.servlet.jsp/2.1.0/com.springsource.javax.servlet.jsp-2.1.0-sources.jar!/javax/servlet/jsp/el/ELException.java">
+    <entry file="file://$PROJECT_DIR$/../simple/src/test/java/org/nicholasren/jbehave/GridSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="41" selection-start="1083" selection-end="1122" vertical-scroll-proportion="0.47962382">
+        <state line="36" column="23" selection-start="998" selection-end="998" vertical-scroll-proportion="0.8148148">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.5/commons-lang-2.5.jar!/org/apache/commons/lang/StringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.13245033">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/3.4.5/jbehave-core-3.4.5-sources.jar!/org/jbehave/core/embedder/Embedder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="0" selection-start="7888" selection-end="7888" vertical-scroll-proportion="0.23678647">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/3.4.5/jbehave-core-3.4.5.jar!/org/jbehave/core/junit/JUnitStory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="16" selection-start="322" selection-end="322" vertical-scroll-proportion="0.53333336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../simple/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="21" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="34" selection-start="5337" selection-end="5350" vertical-scroll-proportion="0.07026144">
+        <state line="247" column="21" selection-start="9313" selection-end="9526" vertical-scroll-proportion="0.58064514">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+    <entry file="file://$PROJECT_DIR$/../simple/src/test/java/org/nicholasren/jbehave/ICanToggleACell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="177" selection-end="580" vertical-scroll-proportion="0.15228426">
-          <folding />
+        <state line="17" column="23" selection-start="646" selection-end="646" vertical-scroll-proportion="0.8333333">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/images/submit-bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/images/springsource-logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/images/banner-graphic.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/images/bullet-arrow.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/images/pets.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/ICanAddAOwner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="46" selection-start="4123" selection-end="4123" vertical-scroll-proportion="0.57474226">
-          <folding />
+        <state line="15" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.65030676">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
+    <entry file="file://$PROJECT_DIR$/../simple/src/test/java/org/nicholasren/jbehave/WebDriverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="42" selection-start="3684" selection-end="3687" vertical-scroll-proportion="1.3623189">
+        <state line="54" column="53" selection-start="1836" selection-end="1842" vertical-scroll-proportion="1.1445428">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="4" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/i_can_add_a_owner.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.5518395">
           <folding />
         </state>
       </provider>
@@ -744,7 +941,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>my-webapp</last-edited>
+          <last-edited>petclinic</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -769,7 +966,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.oracle.toplink.essentials:com.springsource.oracle.toplink.essentials:2.0.0.b41-beta2</last-edited>
+          <last-edited>Maven: org.apache.commons:com.springsource.org.apache.commons.lang:2.1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

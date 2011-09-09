@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/petclinic.iml" filepath="$PROJECT_DIR$/petclinic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jbehave/simple.iml" filepath="$PROJECT_DIR$/../jbehave/simple.iml" />
     </modules>
   </component>
 </project>
