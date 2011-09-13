@@ -2,6 +2,8 @@ tomcat/server/work/
 tomcat/server/logs/
 tomcat/server/temp/
 tomcat/server/webapps/petclinic
+tomcat/server/webapps/examples/
+tomcat/server/webapps/petclinic.war
 target/
 .settings/
 .idea/
