@@ -2,7 +2,7 @@ tomcat/server/work/
 tomcat/server/logs/
 tomcat/server/temp/
 tomcat/server/webapps/
-target
-.settings
-.idea
-.springBeans
+target/
+.settings/
+.idea/
+.springBeans/
