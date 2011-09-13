@@ -3,8 +3,9 @@
 <Context path="/petclinic" reloadable="false">
 	<!-- Tomcat 6.x or higher -->
 
+    <!--
 	<Loader loaderClass="org.springframework.instrument.classloading.tomcat.TomcatInstrumentableClassLoader"/>
-
+    -->
 	
 	<!-- Tomcat 5.5.x (higher then 5.5.20) -->
 	<!--
