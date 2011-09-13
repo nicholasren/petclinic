@@ -1,6 +1,6 @@
 class app-server {
 
-    $project_path = "../../../../"
+    $project_path = "~/IdeaProjects/petclinic/"
     
     # install mysql, openjdk, tomcat
     $wantedpackages = ["mysql-server", "openjdk-6-jdk", "tomcat6"]
