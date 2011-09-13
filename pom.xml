@@ -104,11 +104,13 @@
             <scope>runtime</scope>
         </dependency>
         <!-- MySQL JDBC Connector -->
-        <!--
-              <dependency> <groupId>com.mysql.jdbc</groupId>
-              <artifactId>com.springsource.com.mysql.jdbc</artifactId>
-              <version>5.1.6</version> </dependency>
-          -->
+
+        <dependency>
+            <groupId>com.mysql.jdbc</groupId>
+            <artifactId>com.springsource.com.mysql.jdbc</artifactId>
+            <version>5.1.6</version>
+        </dependency>
+
 
         <!-- Hibernate -->
         <dependency>
@@ -242,9 +244,9 @@
 
         <!--selenium-->
         <dependency>
-                <groupId>org.seleniumhq.selenium</groupId>
-                <artifactId>selenium-java</artifactId>
-                <version>2.5.0</version>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.5.0</version>
         </dependency>
 
     </dependencies>

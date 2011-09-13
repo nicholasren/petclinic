@@ -169,6 +169,8 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.commons:com.springsource.org.apache.commons.dbcp:1.2.2.osgi" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.commons:com.springsource.org.apache.commons.pool:1.5.3" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.hsqldb:com.springsource.org.hsqldb:1.8.0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.mysql.jdbc:com.springsource.com.mysql.jdbc:5.1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:com.springsource.org.apache.commons.logging:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:com.springsource.org.hibernate:3.3.2.GA" level="project" />
     <orderEntry type="library" name="Maven: net.sourceforge.cglib:com.springsource.net.sf.cglib:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.antlr:com.springsource.antlr:2.7.6" level="project" />
