@@ -28,12 +28,25 @@ public class OwnerSteps {
         urlMapping.put("adding owner", "/owners/new");
     }
 
-    private String host = "http://localhost:8080";
+    private String protocolPrefix = "http://";
+
+    private String host = "localhost";
+
+    private String port = "8080";
 
     private String appName = "petclinic";
 
     private String getPageUrl(String pageName) {
-        return new StringBuilder(host).append('/').append(appName).append(urlMapping.get(pageName)).toString();
+
+        String envHost = System.getProperty("target_ip");
+        String envPort = System.getProperty("target_port");
+
+        if (null != envHost && null != envPort) {
+            this.host = envHost;
+            this.port = envPort;
+        }
+
+        return new StringBuilder(protocolPrefix).append(host).append(":").append(port).append('/').append(appName).append(urlMapping.get(pageName)).toString();
     }
 
     private WebDriver driver = new FirefoxDriver();
@@ -41,7 +54,7 @@ public class OwnerSteps {
     @Given("I am on page $pageName")
     public void iAmOnPage(String pageName) {
         String pageUrl = getPageUrl(pageName);
-        System.out.print("pageUrl: " + pageUrl);
+        System.out.println("pageUrl: " + pageUrl);
         driver.get(pageUrl);
     }
 
