@@ -147,6 +147,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maven: org.apache.commons:com.springsource.org.apache.commons.lang:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:org.springframework.context:3.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:org.springframework.asm:3.0.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:org.springframework.aop:3.0.0.RELEASE" level="project" />
@@ -187,7 +188,6 @@
     <orderEntry type="library" name="Maven: org.hibernate:com.springsource.org.hibernate.annotations:3.4.0.GA" level="project" />
     <orderEntry type="library" name="Maven: org.apache.openjpa:com.springsource.org.apache.openjpa:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: net.sourceforge.serp:com.springsource.serp:1.13.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:com.springsource.org.apache.commons.lang:2.1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:com.springsource.javax.servlet:2.5.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:com.springsource.javax.servlet.jsp:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:com.springsource.javax.servlet.jsp.jstl:1.2.0" level="project" />

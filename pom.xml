@@ -10,8 +10,16 @@
     <properties>
         <spring.version>3.0.0.RELEASE</spring.version>
         <slf4j.version>1.5.6</slf4j.version>
+        <jebehave.maven.plugin.version>3.5</jebehave.maven.plugin.version>
     </properties>
     <dependencies>
+
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>com.springsource.org.apache.commons.lang</artifactId>
+            <version>2.5.0</version>
+        </dependency>
 
         <!-- Spring -->
         <dependency>
@@ -24,12 +32,6 @@
                     <groupId>org.apache.commons</groupId>
                     <artifactId>com.springsource.org.apache.commons.logging</artifactId>
                 </exclusion>
-
-                <exclusion>
-                    <groupId>org.apache.commons</groupId>
-                    <artifactId>com.springsource.org.apache.commons.lang</artifactId>
-                </exclusion>
-
             </exclusions>
         </dependency>
         <dependency>
@@ -287,6 +289,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.9</version>
                 <configuration>
                     <includes>
                         <include>**/*Tests.java</include>
@@ -296,6 +299,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <version>2.1.1</version>
                 <configuration>
                     <warName>petclinic</warName>
                 </configuration>
@@ -303,6 +307,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.3</version>
                 <executions>
                     <execution>
                         <id>install</id>
@@ -312,6 +317,11 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.jbehave</groupId>
+                <artifactId>jbehave-maven-plugin</artifactId>
+                <version>${jebehave.maven.plugin.version}</version>
             </plugin>
         </plugins>
     </build>

@@ -1,0 +1,30 @@
+Sep 14, 2011 8:58:11 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Sep 14, 2011 8:58:11 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Sep 14, 2011 8:58:11 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 705 ms
+Sep 14, 2011 8:58:11 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Sep 14, 2011 8:58:11 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.33
+Sep 14, 2011 8:58:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Sep 14, 2011 8:58:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Sep 14, 2011 8:58:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor petclinic.xml
+Sep 14, 2011 8:58:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Sep 14, 2011 8:58:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Sep 14, 2011 8:58:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Sep 14, 2011 8:58:18 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Sep 14, 2011 8:58:18 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Sep 14, 2011 8:58:18 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/17  config=null
+Sep 14, 2011 8:58:18 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6614 ms
