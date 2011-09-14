@@ -1,8 +1,8 @@
-Sep 14, 2011 8:58:14 AM org.apache.catalina.core.ApplicationContext log
+Sep 14, 2011 2:45:20 PM org.apache.catalina.core.ApplicationContext log
 INFO: Initializing Spring root WebApplicationContext
-Sep 14, 2011 8:58:16 AM org.apache.catalina.core.ApplicationContext log
+Sep 14, 2011 2:45:21 PM org.apache.catalina.core.ApplicationContext log
 INFO: Initializing Spring FrameworkServlet 'petclinic'
-Sep 14, 2011 8:58:18 AM org.apache.catalina.core.ApplicationContext log
+Sep 14, 2011 2:45:22 PM org.apache.catalina.core.ApplicationContext log
 INFO: ContextListener: contextInitialized()
-Sep 14, 2011 8:58:18 AM org.apache.catalina.core.ApplicationContext log
+Sep 14, 2011 2:45:22 PM org.apache.catalina.core.ApplicationContext log
 INFO: SessionListener: contextInitialized()

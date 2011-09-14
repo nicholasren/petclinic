@@ -322,6 +322,28 @@
                 <groupId>org.jbehave</groupId>
                 <artifactId>jbehave-maven-plugin</artifactId>
                 <version>${jebehave.maven.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>run-stories-as-embeddables</id>
+                        <phase>integration-test</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <scope>test</scope>
+                    <includes>
+                        <include>**/uat/**/*.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/*Steps.java</exclude>
+                    </excludes>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                        <version>1.2.16</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>

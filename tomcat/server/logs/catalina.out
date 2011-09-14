@@ -1,83 +1,120 @@
-Sep 14, 2011 8:58:11 AM org.apache.catalina.core.AprLifecycleListener init
+Sep 14, 2011 2:45:17 PM org.apache.catalina.core.AprLifecycleListener init
 INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
-Sep 14, 2011 8:58:11 AM org.apache.coyote.http11.Http11Protocol init
-INFO: Initializing Coyote HTTP/1.1 on http-8080
-Sep 14, 2011 8:58:11 AM org.apache.catalina.startup.Catalina load
-INFO: Initialization processed in 705 ms
-Sep 14, 2011 8:58:11 AM org.apache.catalina.core.StandardService start
+Sep 14, 2011 2:45:18 PM org.apache.coyote.http11.Http11Protocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.init(JIoEndpoint.java:549)
+	at org.apache.coyote.http11.Http11Protocol.init(Http11Protocol.java:176)
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1022)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:703)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:838)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:538)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:562)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:261)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at java.net.ServerSocket.<init>(ServerSocket.java:150)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:50)
+	at org.apache.tomcat.util.net.JIoEndpoint.init(JIoEndpoint.java:538)
+	... 12 more
+Sep 14, 2011 2:45:18 PM org.apache.catalina.core.StandardService initialize
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use <null>:8080
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1024)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:703)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:838)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:538)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:562)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:261)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+Sep 14, 2011 2:45:18 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 513 ms
+Sep 14, 2011 2:45:18 PM org.apache.catalina.core.StandardService start
 INFO: Starting service Catalina
-Sep 14, 2011 8:58:11 AM org.apache.catalina.core.StandardEngine start
+Sep 14, 2011 2:45:18 PM org.apache.catalina.core.StandardEngine start
 INFO: Starting Servlet Engine: Apache Tomcat/6.0.33
-Sep 14, 2011 8:58:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+Sep 14, 2011 2:45:18 PM org.apache.catalina.startup.HostConfig deployDescriptor
 INFO: Deploying configuration descriptor host-manager.xml
-Sep 14, 2011 8:58:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+Sep 14, 2011 2:45:18 PM org.apache.catalina.startup.HostConfig deployDescriptor
 INFO: Deploying configuration descriptor manager.xml
-Sep 14, 2011 8:58:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+Sep 14, 2011 2:45:18 PM org.apache.catalina.startup.HostConfig deployDescriptor
 INFO: Deploying configuration descriptor petclinic.xml
-2011-09-14 08:58:14,120 INFO [org.springframework.web.context.ContextLoader] - <Root WebApplicationContext: initialization started>
-2011-09-14 08:58:14,216 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Refreshing Root WebApplicationContext: startup date [Wed Sep 14 08:58:14 GMT+08:00 2011]; root of context hierarchy>
-2011-09-14 08:58:14,327 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/applicationContext-jdbc.xml]>
-2011-09-14 08:58:14,960 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/applicationContext-dataSource.xml]>
-2011-09-14 08:58:15,279 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [jdbc.properties]>
-2011-09-14 08:58:15,492 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1864160e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,mbeanExporter,clinic,callMonitor]; root of factory hierarchy>
-2011-09-14 08:58:16,254 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - <Executing SQL script from class path resource [db/mysql/initDB.txt]>
-2011-09-14 08:58:16,379 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - <Done executing SQL script from class path resource [db/mysql/initDB.txt] in 125 ms.>
-2011-09-14 08:58:16,379 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - <Executing SQL script from class path resource [db/mysql/populateDB.txt]>
-2011-09-14 08:58:16,390 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - <Done executing SQL script from class path resource [db/mysql/populateDB.txt] in 11 ms.>
-2011-09-14 08:58:16,513 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Registering beans for JMX exposure on startup>
-2011-09-14 08:58:16,644 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Bean with name 'clinic' has been autodetected for JMX exposure>
-2011-09-14 08:58:16,657 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Bean with name 'callMonitor' has been autodetected for JMX exposure>
-2011-09-14 08:58:16,659 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Located MBean 'clinic': registering with JMX server as MBean [petclinic:type=Clinic]>
-2011-09-14 08:58:16,660 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Located managed bean 'callMonitor': registering with JMX server as MBean [petclinic:type=CallMonitor]>
-2011-09-14 08:58:16,713 INFO [org.springframework.web.context.ContextLoader] - <Root WebApplicationContext: initialization completed in 2583 ms>
-2011-09-14 08:58:16,729 INFO [org.springframework.web.servlet.DispatcherServlet] - <FrameworkServlet 'petclinic': initialization started>
-2011-09-14 08:58:16,730 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Refreshing WebApplicationContext for namespace 'petclinic-servlet': startup date [Wed Sep 14 08:58:16 GMT+08:00 2011]; parent: Root WebApplicationContext>
-2011-09-14 08:58:16,731 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from ServletContext resource [/WEB-INF/petclinic-servlet.xml]>
-2011-09-14 08:58:16,895 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2242f64e: defining beans [addOwnerForm,addPetForm,addVisitForm,clinicController,editOwnerForm,editPetForm,findOwnersForm,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.web.servlet.view.BeanNameViewResolver#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,visits,vets,marshaller,messageSource]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1864160e>
-2011-09-14 08:58:17,544 INFO [org.springframework.oxm.jaxb.Jaxb2Marshaller] - <Creating JAXBContext with classes to be bound [class org.springframework.samples.petclinic.Vets]>
-2011-09-14 08:58:17,808 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/new] onto handler [org.springframework.samples.petclinic.web.AddOwnerForm@3484fdbc]>
-2011-09-14 08:58:17,808 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/new.*] onto handler [org.springframework.samples.petclinic.web.AddOwnerForm@3484fdbc]>
-2011-09-14 08:58:17,808 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/new/] onto handler [org.springframework.samples.petclinic.web.AddOwnerForm@3484fdbc]>
-2011-09-14 08:58:17,808 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/pets/new] onto handler [org.springframework.samples.petclinic.web.AddPetForm@72e5c94]>
-2011-09-14 08:58:17,809 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/pets/new.*] onto handler [org.springframework.samples.petclinic.web.AddPetForm@72e5c94]>
-2011-09-14 08:58:17,809 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/pets/new/] onto handler [org.springframework.samples.petclinic.web.AddPetForm@72e5c94]>
-2011-09-14 08:58:17,809 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits/new] onto handler [org.springframework.samples.petclinic.web.AddVisitForm@74bffc3a]>
-2011-09-14 08:58:17,809 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits/new.*] onto handler [org.springframework.samples.petclinic.web.AddVisitForm@74bffc3a]>
-2011-09-14 08:58:17,809 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits/new/] onto handler [org.springframework.samples.petclinic.web.AddVisitForm@74bffc3a]>
-2011-09-14 08:58:17,810 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Root mapping to handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,810 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/vets] onto handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,810 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/vets.*] onto handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,810 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/vets/] onto handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,810 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}] onto handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,810 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}.*] onto handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,810 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/] onto handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,810 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits] onto handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,811 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits.*] onto handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,811 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits/] onto handler [org.springframework.samples.petclinic.web.ClinicController@68487fb7]>
-2011-09-14 08:58:17,811 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/edit] onto handler [org.springframework.samples.petclinic.web.EditOwnerForm@6fb8fcdd]>
-2011-09-14 08:58:17,811 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/edit.*] onto handler [org.springframework.samples.petclinic.web.EditOwnerForm@6fb8fcdd]>
-2011-09-14 08:58:17,811 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/edit/] onto handler [org.springframework.samples.petclinic.web.EditOwnerForm@6fb8fcdd]>
-2011-09-14 08:58:17,812 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/edit] onto handler [org.springframework.samples.petclinic.web.EditPetForm@59e14a78]>
-2011-09-14 08:58:17,812 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/edit.*] onto handler [org.springframework.samples.petclinic.web.EditPetForm@59e14a78]>
-2011-09-14 08:58:17,812 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/edit/] onto handler [org.springframework.samples.petclinic.web.EditPetForm@59e14a78]>
-2011-09-14 08:58:17,813 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/search] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@55e03a61]>
-2011-09-14 08:58:17,813 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/search.*] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@55e03a61]>
-2011-09-14 08:58:17,813 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/search/] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@55e03a61]>
-2011-09-14 08:58:17,813 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@55e03a61]>
-2011-09-14 08:58:17,813 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners.*] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@55e03a61]>
-2011-09-14 08:58:17,813 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@55e03a61]>
-2011-09-14 08:58:17,819 INFO [org.springframework.web.servlet.DispatcherServlet] - <FrameworkServlet 'petclinic': initialization completed in 1090 ms>
-Sep 14, 2011 8:58:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+2011-09-14 14:45:20,106 INFO [org.springframework.web.context.ContextLoader] - <Root WebApplicationContext: initialization started>
+2011-09-14 14:45:20,145 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Refreshing Root WebApplicationContext: startup date [Wed Sep 14 14:45:20 GMT+08:00 2011]; root of context hierarchy>
+2011-09-14 14:45:20,214 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/applicationContext-jdbc.xml]>
+2011-09-14 14:45:20,678 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/applicationContext-dataSource.xml]>
+2011-09-14 14:45:20,854 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [jdbc.properties]>
+2011-09-14 14:45:20,962 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@54aa2db: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,mbeanExporter,clinic,callMonitor]; root of factory hierarchy>
+2011-09-14 14:45:21,547 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - <Executing SQL script from class path resource [db/mysql/initDB.txt]>
+2011-09-14 14:45:21,562 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - <Done executing SQL script from class path resource [db/mysql/initDB.txt] in 15 ms.>
+2011-09-14 14:45:21,562 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - <Executing SQL script from class path resource [db/mysql/populateDB.txt]>
+2011-09-14 14:45:21,568 INFO [org.springframework.jdbc.datasource.init.ResourceDatabasePopulator] - <Done executing SQL script from class path resource [db/mysql/populateDB.txt] in 6 ms.>
+2011-09-14 14:45:21,630 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Registering beans for JMX exposure on startup>
+2011-09-14 14:45:21,680 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Bean with name 'clinic' has been autodetected for JMX exposure>
+2011-09-14 14:45:21,689 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Bean with name 'callMonitor' has been autodetected for JMX exposure>
+2011-09-14 14:45:21,691 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Located MBean 'clinic': registering with JMX server as MBean [petclinic:type=Clinic]>
+2011-09-14 14:45:21,692 INFO [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - <Located managed bean 'callMonitor': registering with JMX server as MBean [petclinic:type=CallMonitor]>
+2011-09-14 14:45:21,721 INFO [org.springframework.web.context.ContextLoader] - <Root WebApplicationContext: initialization completed in 1601 ms>
+2011-09-14 14:45:21,734 INFO [org.springframework.web.servlet.DispatcherServlet] - <FrameworkServlet 'petclinic': initialization started>
+2011-09-14 14:45:21,736 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Refreshing WebApplicationContext for namespace 'petclinic-servlet': startup date [Wed Sep 14 14:45:21 GMT+08:00 2011]; parent: Root WebApplicationContext>
+2011-09-14 14:45:21,736 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from ServletContext resource [/WEB-INF/petclinic-servlet.xml]>
+2011-09-14 14:45:21,856 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2755d4be: defining beans [addOwnerForm,addPetForm,addVisitForm,clinicController,editOwnerForm,editPetForm,findOwnersForm,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.web.servlet.view.BeanNameViewResolver#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,visits,vets,marshaller,messageSource]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@54aa2db>
+2011-09-14 14:45:22,236 INFO [org.springframework.oxm.jaxb.Jaxb2Marshaller] - <Creating JAXBContext with classes to be bound [class org.springframework.samples.petclinic.Vets]>
+2011-09-14 14:45:22,541 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/new] onto handler [org.springframework.samples.petclinic.web.AddOwnerForm@73e2bda7]>
+2011-09-14 14:45:22,541 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/new.*] onto handler [org.springframework.samples.petclinic.web.AddOwnerForm@73e2bda7]>
+2011-09-14 14:45:22,541 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/new/] onto handler [org.springframework.samples.petclinic.web.AddOwnerForm@73e2bda7]>
+2011-09-14 14:45:22,542 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/pets/new] onto handler [org.springframework.samples.petclinic.web.AddPetForm@2b115a61]>
+2011-09-14 14:45:22,542 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/pets/new.*] onto handler [org.springframework.samples.petclinic.web.AddPetForm@2b115a61]>
+2011-09-14 14:45:22,543 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/pets/new/] onto handler [org.springframework.samples.petclinic.web.AddPetForm@2b115a61]>
+2011-09-14 14:45:22,543 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits/new] onto handler [org.springframework.samples.petclinic.web.AddVisitForm@44ac5e]>
+2011-09-14 14:45:22,543 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits/new.*] onto handler [org.springframework.samples.petclinic.web.AddVisitForm@44ac5e]>
+2011-09-14 14:45:22,543 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits/new/] onto handler [org.springframework.samples.petclinic.web.AddVisitForm@44ac5e]>
+2011-09-14 14:45:22,544 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Root mapping to handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,544 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/vets] onto handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,544 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/vets.*] onto handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,544 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/vets/] onto handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,545 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}] onto handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,545 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}.*] onto handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,545 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/] onto handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,545 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits] onto handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,545 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits.*] onto handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,545 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/visits/] onto handler [org.springframework.samples.petclinic.web.ClinicController@1c904f75]>
+2011-09-14 14:45:22,546 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/edit] onto handler [org.springframework.samples.petclinic.web.EditOwnerForm@465098f9]>
+2011-09-14 14:45:22,546 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/edit.*] onto handler [org.springframework.samples.petclinic.web.EditOwnerForm@465098f9]>
+2011-09-14 14:45:22,546 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/{ownerId}/edit/] onto handler [org.springframework.samples.petclinic.web.EditOwnerForm@465098f9]>
+2011-09-14 14:45:22,547 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/edit] onto handler [org.springframework.samples.petclinic.web.EditPetForm@556b277f]>
+2011-09-14 14:45:22,547 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/edit.*] onto handler [org.springframework.samples.petclinic.web.EditPetForm@556b277f]>
+2011-09-14 14:45:22,547 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/*/pets/{petId}/edit/] onto handler [org.springframework.samples.petclinic.web.EditPetForm@556b277f]>
+2011-09-14 14:45:22,548 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/search] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@6dee2ea8]>
+2011-09-14 14:45:22,548 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/search.*] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@6dee2ea8]>
+2011-09-14 14:45:22,548 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/search/] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@6dee2ea8]>
+2011-09-14 14:45:22,549 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@6dee2ea8]>
+2011-09-14 14:45:22,549 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners.*] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@6dee2ea8]>
+2011-09-14 14:45:22,549 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - <Mapped URL path [/owners/] onto handler [org.springframework.samples.petclinic.web.FindOwnersForm@6dee2ea8]>
+2011-09-14 14:45:22,556 INFO [org.springframework.web.servlet.DispatcherServlet] - <FrameworkServlet 'petclinic': initialization completed in 822 ms>
+Sep 14, 2011 2:45:22 PM org.apache.catalina.startup.HostConfig deployDirectory
 INFO: Deploying web application directory docs
-Sep 14, 2011 8:58:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+Sep 14, 2011 2:45:22 PM org.apache.catalina.startup.HostConfig deployDirectory
 INFO: Deploying web application directory examples
-Sep 14, 2011 8:58:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+Sep 14, 2011 2:45:22 PM org.apache.catalina.startup.HostConfig deployDirectory
 INFO: Deploying web application directory ROOT
-Sep 14, 2011 8:58:18 AM org.apache.coyote.http11.Http11Protocol start
+Sep 14, 2011 2:45:22 PM org.apache.coyote.http11.Http11Protocol start
 INFO: Starting Coyote HTTP/1.1 on http-8080
-Sep 14, 2011 8:58:18 AM org.apache.jk.common.ChannelSocket init
+Sep 14, 2011 2:45:22 PM org.apache.jk.common.ChannelSocket init
 INFO: JK: ajp13 listening on /0.0.0.0:8009
-Sep 14, 2011 8:58:18 AM org.apache.jk.server.JkMain start
+Sep 14, 2011 2:45:22 PM org.apache.jk.server.JkMain start
 INFO: Jk running ID=0 time=0/17  config=null
-Sep 14, 2011 8:58:18 AM org.apache.catalina.startup.Catalina start
-INFO: Server startup in 6614 ms
+Sep 14, 2011 2:45:22 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4805 ms
