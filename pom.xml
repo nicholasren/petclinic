@@ -12,6 +12,7 @@
         <slf4j.version>1.5.6</slf4j.version>
         <jebehave.maven.plugin.version>3.5</jebehave.maven.plugin.version>
         <compile.source>1.6</compile.source>
+        <targetJdk>1.6</targetJdk>
     </properties>
     <dependencies>
 
@@ -360,9 +361,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>2.5</version>
-                <configuration>
-                    <targetJdk>${compile.source}</targetJdk>
-                </configuration>
             </plugin>
         </plugins>
     </reporting>
