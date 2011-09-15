@@ -13,10 +13,15 @@
         <jebehave.maven.plugin.version>3.5</jebehave.maven.plugin.version>
         <compile.source>1.6</compile.source>
         <targetJdk>1.6</targetJdk>
+
+        <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
+        <jdbc.url>jdbc:mysql://localhost:3306/petclinic</jdbc.url>
+        <jdbc.username>root</jdbc.username>
+        <jdbc.password></jdbc.password>
+        <jdbc.dbms>mysql</jdbc.dbms>
     </properties>
+
     <dependencies>
-
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>com.springsource.org.apache.commons.lang</artifactId>
@@ -278,6 +283,26 @@
     </repositories>
     <build>
         <plugins>
+            <!--read properties-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.0-alpha-2</version>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>src/main/resources/jdbc.properties</file>
+                            </files>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -307,6 +332,8 @@
                     <warName>petclinic</warName>
                 </configuration>
             </plugin>
+
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -321,6 +348,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.jbehave</groupId>
                 <artifactId>jbehave-maven-plugin</artifactId>
@@ -348,6 +376,74 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
+            <!--set up database-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>sql-maven-plugin</artifactId>
+                <version>1.1</version>
+                <configuration>
+                    <driver>${jdbc.driverClassName}</driver>
+                    <url>${jdbc.url}</url>
+                    <username>${jdbc.username}</username>
+                    <password>${jdbc.password}</password>
+                    <srcFiles>
+                        <srcFile>
+                            src/main/resources/db/mysql/create_schema_version_table.mysql.sql
+                        </srcFile>
+                        <srcFile>
+                            src/main/resources/db/mysql/create_db.sql
+                        </srcFile>
+                        <srcFile>
+                            src/main/resources/db/mysql/populate_db.sql
+                        </srcFile>
+                    </srcFiles>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>create-change-log</id>
+                        <phase>process-test-resources</phase>
+                        <goals>
+                            <goal>execute</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.mysql.jdbc</groupId>
+                        <artifactId>com.springsource.com.mysql.jdbc</artifactId>
+                        <version>5.1.6</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+            <!--dbdeploy plugin-->
+            <plugin>
+                <groupId>com.dbdeploy</groupId>
+                <artifactId>maven-dbdeploy-plugin</artifactId>
+                <version>3.0M3</version>
+                <configuration>
+                    <scriptdirectory>src/main/resources/db/mysql/delta</scriptdirectory>
+                    <driver>${jdbc.driverClassName}</driver>
+                    <url>${jdbc.url}</url>
+                    <userid>${jdbc.username}</userid>
+                    <password>${jdbc.password}</password>
+                    <dbms>${jdbc.dbms}</dbms>
+                    <delimiter>;</delimiter>
+                    <delimiterType>row</delimiterType>
+                    <outputfile>src/main/resources/db/mysql/apply.sql</outputfile>
+                    <undoOutputfile>src/main/resources/db/mysql/undo.sql</undoOutputfile>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.mysql.jdbc</groupId>
+                        <artifactId>com.springsource.com.mysql.jdbc</artifactId>
+                        <version>5.1.6</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+
         </plugins>
     </build>
     <reporting>
