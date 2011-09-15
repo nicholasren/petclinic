@@ -39,13 +39,6 @@ public class OwnerSteps {
     private String getPageUrl(String pageName) {
 
         Map<String, String> env = System.getenv();
-
-        System.out.println("env in owner steps -------start-------");
-        for (Map.Entry<String, String> entry : env.entrySet()) {
-            System.out.println(entry.getKey() + " => " + entry.getValue());
-        }
-        System.out.println("env in owner steps -------end---------");
-
         String envHost = env.get("target_ip");
         String envPort = env.get("target_port");
 
