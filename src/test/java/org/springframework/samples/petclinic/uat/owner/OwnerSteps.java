@@ -41,7 +41,7 @@ public class OwnerSteps {
         Map<String, String> env = System.getenv();
 
         System.out.println("env in owner steps -------start-------");
-        for(Map.Entry<String, String> entry : env.entrySet()){
+        for (Map.Entry<String, String> entry : env.entrySet()) {
             System.out.println(entry.getKey() + " => " + entry.getValue());
         }
         System.out.println("env in owner steps -------end---------");
@@ -49,8 +49,10 @@ public class OwnerSteps {
         String envHost = env.get("target_ip");
         String envPort = env.get("target_port");
 
-        if (null != envHost && null != envPort) {
+        if (null != envHost) {
             this.host = envHost;
+        }
+        if (null != envPort) {
             this.port = envPort;
         }
 
