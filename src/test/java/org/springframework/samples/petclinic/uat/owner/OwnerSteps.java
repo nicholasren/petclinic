@@ -38,8 +38,9 @@ public class OwnerSteps {
 
     private String getPageUrl(String pageName) {
 
-        String envHost = System.getProperty("target_ip");
-        String envPort = System.getProperty("target_port");
+        Map<String, String> env = System.getenv();
+        String envHost = env.get("target_ip");
+        String envPort = env.get("target_port");
 
         if (null != envHost && null != envPort) {
             this.host = envHost;
