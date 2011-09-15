@@ -336,9 +336,6 @@
                     <excludes>
                         <exclude>**/*Steps.java</exclude>
                     </excludes>
-                    <systemProperties>
-                        target_ip
-                    </systemProperties>
                 </configuration>
                 <dependencies>
                     <dependency>
