@@ -11,6 +11,7 @@
         <spring.version>3.0.0.RELEASE</spring.version>
         <slf4j.version>1.5.6</slf4j.version>
         <jebehave.maven.plugin.version>3.5</jebehave.maven.plugin.version>
+        <compile.source>1.6</compile.source>
     </properties>
     <dependencies>
 
@@ -279,10 +280,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
                 <configuration>
                     <verbose>true</verbose>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>${compile.source}</source>
+                    <target>${compile.source}</target>
                     <showWarnings>true</showWarnings>
                 </configuration>
             </plugin>
@@ -347,4 +349,21 @@
             </plugin>
         </plugins>
     </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <targetJdk>${compile.source}</targetJdk>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
