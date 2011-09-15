@@ -18,10 +18,6 @@
         <jdbc.username>pc</jdbc.username>
         <jdbc.password>pc</jdbc.password>
         <jdbc.dbms>mysql</jdbc.dbms>
-
-        <!--<root.jdbc.url>jdbc:mysql://localhost:3306/mysql</root.jdbc.url>-->
-        <!--<root.jdbc.username>root</root.jdbc.username>-->
-        <!--<root.jdbc.password></root.jdbc.password>-->
     </properties>
 
     <dependencies>
