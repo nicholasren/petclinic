@@ -58,3 +58,10 @@ CREATE TABLE IF NOT EXISTS visits (
   description VARCHAR(255),
   FOREIGN KEY (pet_id) REFERENCES pets(id)
 ) engine=InnoDB;
+
+CREATE TABLE IF NOT EXISTS changelog(
+  change_number BIGINT NOT NULL PRIMARY KEY,
+  complete_dt TIMESTAMP NOT NULL,
+  applied_by VARCHAR(100) NOT NULL,
+  description VARCHAR(500) NOT NULL
+) engine=InnoDB;

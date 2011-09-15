@@ -6,3 +6,11 @@ Sep 14, 2011 2:45:22 PM org.apache.catalina.core.ApplicationContext log
 INFO: ContextListener: contextInitialized()
 Sep 14, 2011 2:45:22 PM org.apache.catalina.core.ApplicationContext log
 INFO: SessionListener: contextInitialized()
+Sep 14, 2011 7:23:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Sep 14, 2011 7:23:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Sep 14, 2011 7:23:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'petclinic'
+Sep 14, 2011 7:23:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext

@@ -29,6 +29,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$USER_HOME$/projects/my-app/pom.xml" />
         <option value="$PROJECT_DIR$/../jbehave/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/pom.xml" />
       </list>
     </option>
   </component>
