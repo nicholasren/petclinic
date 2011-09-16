@@ -509,3 +509,37 @@ Sep 15, 2011 7:08:03 PM org.apache.jk.server.JkMain start
 INFO: Jk running ID=0 time=0/17  config=null
 Sep 15, 2011 7:08:03 PM org.apache.catalina.startup.Catalina start
 INFO: Server startup in 3786 ms
+Sep 16, 2011 8:38:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory static
+Sep 16, 2011 8:39:30 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/docs]
+Sep 16, 2011 8:39:31 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/static]
+Sep 16, 2011 8:42:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory test
+Sep 16, 2011 8:46:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory 20110916
+Sep 16, 2011 8:47:03 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/20110916]
+Sep 16, 2011 8:48:34 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory 20110916%H4826
+Sep 16, 2011 8:48:54 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory 20110916084844
+Sep 16, 2011 8:49:04 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/20110916084844]
+Sep 16, 2011 8:49:05 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/20110916%H4826]
+Sep 16, 2011 11:06:26 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/petclinic]
+2011-09-16 11:06:26,228 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Closing WebApplicationContext for namespace 'petclinic-servlet': startup date [Thu Sep 15 19:08:02 GMT+08:00 2011]; parent: Root WebApplicationContext>
+2011-09-16 11:06:26,248 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c07bacb: defining beans [addOwnerForm,addPetForm,addVisitForm,clinicController,editOwnerForm,editPetForm,findOwnersForm,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.web.servlet.view.BeanNameViewResolver#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,visits,vets,marshaller,messageSource]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6b96bac4>
+2011-09-16 11:06:26,271 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Closing Root WebApplicationContext: startup date [Thu Sep 15 19:08:01 GMT+08:00 2011]; root of context hierarchy>
+2011-09-16 11:06:26,282 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b96bac4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,org.springframework.jdbc.datasource.init.DataSourceInitializer#0,transactionManager,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,mbeanExporter,clinic,callMonitor]; root of factory hierarchy>
+Sep 16, 2011 11:06:26 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petclinic] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Sep 16, 2011 11:06:26 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/petclinic] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Sep 16, 2011 11:06:27 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/test]
+Sep 16, 2011 11:06:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory petclinic
