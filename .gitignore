@@ -1,7 +1,7 @@
 tomcat/server/work/
-tomcat/server/webapps/petclinic
 tomcat/server/webapps/examples/
 tomcat/server/webapps/petclinic.war
+tomcat/server/webapps/petclinic/
 tomcat/server/logs
 target/
 .settings/
