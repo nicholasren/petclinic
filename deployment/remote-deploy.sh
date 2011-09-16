@@ -7,10 +7,11 @@
 #export target_username=root
 #export target_ip=10.29.2.21
 #export target_deploy_path=/home/ubuntu/projects/petclinic/tomcat/server
+#export target_deploy_path=/var/lib/tomcat6/
 #export target_jdbc_url=jdbc:mysql://10.29.2.21:3306/petclinic
 
 #shutdown server
-ssh $target_username@$target_ip "bash $target_deploy_path/bin/shutdown.sh"
+ssh $target_username@$target_ip "invoke-rc.d tomcat6 stop"
 
 #make a dir named in system time
 time=$(date '+%Y%m%d%H%M%S' )
@@ -31,4 +32,4 @@ ssh $target_username@$target_ip "mv jdbc.properties.modified $deploy_path/WEB-IN
 ssh $target_username@$target_ip "unlink $target_deploy_path/webapps/petclinic && ln -s $deploy_path $target_deploy_path/webapps/petclinic"
 
 #start server
-ssh $target_username@$target_ip "bash $target_deploy_path/bin/startup.sh"
+ssh $target_username@$target_ip "invoke-rc.d tomcat6 start"
