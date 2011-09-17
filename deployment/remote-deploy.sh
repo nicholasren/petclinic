@@ -11,7 +11,7 @@
 #export target_jdbc_url=jdbc:mysql://10.29.2.21:3306/petclinic
 
 #shutdown server
-ssh $target_username@$target_ip "invoke-rc.d tomcat6 stop"
+ssh $target_username@$target_ip "bash $target_deploy_path/bin/shutdown.sh"
 
 #make a dir named in system time
 time=$(date '+%Y%m%d%H%M%S' )
@@ -32,4 +32,4 @@ ssh $target_username@$target_ip "mv jdbc.properties.modified $deploy_path/WEB-IN
 ssh $target_username@$target_ip "unlink $target_deploy_path/webapps/petclinic && ln -s $deploy_path $target_deploy_path/webapps/petclinic"
 
 #start server
-ssh $target_username@$target_ip "invoke-rc.d tomcat6 start"
+ssh $target_username@$target_ip "bash $target_deploy_path/bin/startup.sh"
