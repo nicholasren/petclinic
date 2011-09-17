@@ -1,5 +1,5 @@
 
-export target_root_jdbc_url="jdbc:mysql://192.168.137.122:3306/mysql"
+export target_root_jdbc_url="jdbc:mysql://192.168.137.60:3306/petclinic"
 export target_jdbc_username="pc"
 export target_jdbc_password="pc"
 #set up database
