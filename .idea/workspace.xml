@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb0e3ad-cdb9-44cf-a192-c2e4ed998a35" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/remote-setup-database.sh" afterPath="$PROJECT_DIR$/deployment/remote-setup-database.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tomcat/server/webapps/petclinic" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat/server/logs/catalina.out" afterPath="$PROJECT_DIR$/tomcat/server/logs/catalina.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/modules/app-server/manifests/init.pp" afterPath="$PROJECT_DIR$/deployment/modules/app-server/manifests/init.pp" />
     </list>
     <ignored path="petclinic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,37 +79,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="local-deploy.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/development/local-deploy.sh">
+      <file leaf-file-name="init.pp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deployment/modules/app-server/manifests/init.pp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="29" column="4" selection-start="716" selection-end="716" vertical-scroll-proportion="0.64752793">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remote-setup-database.sh" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deployment/remote-setup-database.sh">
+      <file leaf-file-name="create_db.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/modules/app-server/files/create_db.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.022801302">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="install-infrustructure.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/install-infrustructure.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remote-deploy.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/remote-deploy.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+            <state line="1" column="43" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,10 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/ICanAddAOwner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/i_can_add_a_owner.story" />
-        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/bac.ren" />
-        <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/bac.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/test.properties" />
         <option value="$PROJECT_DIR$/scala/src/test/t.scala" />
         <option value="$PROJECT_DIR$/src/test/java/org/springframework/samples/petclinic/uat/owner/OwnerSteps.java" />
@@ -138,11 +118,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/db/mysql/delta/001_insert_data.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/db/mysql/create_schema_version_table.mysql.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/mysql/create_db.sql" />
         <option value="$PROJECT_DIR$/development/setup-env.sh" />
         <option value="$PROJECT_DIR$/deployment/setup-database.sh" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/deployment/remote-setup-database.sh" />
+        <option value="$PROJECT_DIR$/deployment/README" />
+        <option value="$PROJECT_DIR$/deployment/remote-deploy.sh" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/mysql/create_db.sql" />
+        <option value="$PROJECT_DIR$/deployment/modules/app-server/files/grant_permission.sql" />
+        <option value="$PROJECT_DIR$/deployment/modules/app-server/manifests/init.pp" />
       </list>
     </option>
   </component>
@@ -293,7 +277,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="development" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,6 +292,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petclinic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deployment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="files" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -701,7 +733,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18846466" sideWeight="0.6707317" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18846466" sideWeight="0.6707317" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18115354" sideWeight="0.6707317" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -759,65 +791,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/dbdeploy/maven-dbdeploy-plugin/3.0M3/maven-dbdeploy-plugin-3.0M3.jar!/META-INF/maven/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="8" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.6233766">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/petclinic_tomcat_all.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/mysql/petclinic_db_setup_mysql.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/mysql/delta/001_insert_data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="54" selection-start="48" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/mysql/populate_db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="277" selection-end="333" vertical-scroll-proportion="0.11400651">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tomcat/server/webapps/petclinic/META-INF/maven/org.springframework.samples/org.springframework.samples.petclinic/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="37" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db/mysql/undo.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/mysql/create_db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="16" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.8660287">
           <folding />
         </state>
       </provider>
@@ -836,20 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/install-infrustructure.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/remote-deploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="36" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.57575756">
@@ -864,9 +826,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="9" selection-start="1499" selection-end="1536" vertical-scroll-proportion="0.50877196">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.044657096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tomcat/server/RUNNING.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/remote-deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="126" selection-start="897" selection-end="990" vertical-scroll-proportion="0.61563516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/install-infrustructure.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/remote-setup-database.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.022801302">
+        <state line="3" column="33" selection-start="133" selection-end="133" vertical-scroll-proportion="0.066985644">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/modules/app-server/files/create_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="43" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/mysql/create_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/modules/app-server/manifests/init.pp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="4" selection-start="716" selection-end="716" vertical-scroll-proportion="0.64752793">
           <folding />
         </state>
       </provider>
