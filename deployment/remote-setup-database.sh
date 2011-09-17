@@ -5,4 +5,4 @@
 #set up database
 
 
-mvn sql:execute -Durl=$target_root_jdbc_url -Dusername=$target_jdbc_username -Dpassword=$target_jdbc_password -X
+mvn sql:execute -Durl=$target_root_jdbc_url -Dusername=$target_jdbc_username -Dpassword=$target_jdbc_password 
