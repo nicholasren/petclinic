@@ -1,15 +1,55 @@
-to deploy package to remote environment, you should:
-  1)set up database:
-    . modify remote-setup-database.sh, change target_jdbc_url to your own data server.
-    . run script remote-setup-database.sh to set up database.
+此文件夹中的脚本实现了把应用远程部署到一台机器上的功能:
+在运行此脚本之前，需要搭建一个部署环境(具体步骤参加附注1)
 
-  2)deploy to remote environment:
-    . generate your local ssh public key, and add this public key into the remote environment's authorized_keys.
-      reference link: (http://www.sar4.com/2011/08/21/ssh%E5%AF%86%E9%92%A5%E5%AF%B9%E7%9A%84%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95.html)
+  1)初始化数据库:
+    . 修改文件remote-setup-database.sh, 把环境变量target_jdbc_url中的ip改为部署环境的ip.
+    . 执行脚本remote-setup-database.sh.
 
-    . modify remote-deploy.sh modify these variables to your environment (target_username, target_ip, target_deploy_path, target_jdbc_url)
+  2)部署软件包:
+    . 生成当前用户的的SSH公钥，并添加到部署环境的authorized_keys中
+      具体操作参见这里: (http://www.sar4.com/2011/08/21/ssh%E5%AF%86%E9%92%A5%E5%AF%B9%E7%9A%84%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95.html)
 
-    . run command "mvn package", this instruction will create a package named "petclinic.war" in directory "target/"
+    . 修改文件remote-deploy.sh
+      把环境变量 (target_username, target_ip, target_deploy_path, target_jdbc_url)改成部署环境的相应值。
 
-    . run script remote-deploy.sh.
+    . 执行命令"mvn package", 这个命令回在target目录下生成一个名为"petclinic.war"的软件包
 
+    . 运行脚本remote-deploy.sh
+
+
+
+附注1:
+如何在ubuntu上搭建一个部署环境?
+    1. 在ubuntu上安装git和puppet
+
+       命令 :
+       sudo apt-get install git
+       sudo apt-get install puppet
+
+    2. 从github上获取搭建基础设施（java，mysql，tomcat）的puppet脚本。
+
+       命令：
+       cd /etc/puppet/modules/
+       git clone git://github.com/nicholasren/puppet-java-tomcat-mysql.git app-server
+
+    3. 搭建环境的基础设施(java, mysql, tomcat)
+       cd /etc/puppet/modules/app-server/
+       bash install-infrastructure.sh
+
+    至此，你就搭建好了一台用于产品部署的机器。
+
+附注2:
+如何在ubuntu上搭建一个开发环境?
+    导入名为development-env的镜像即可。
+
+
+附注3:
+如何在unbuntu上搭建一个CI环境(Go Server)?
+    导入名为ci-env的镜像即可。
+
+附注4:
+如何在unbuntu上搭建一个CI环境(Go Agent)?
+    1. 导入名为ci-env的镜像。
+    2. 启动系统，登陆,  用户名/密码   ci/ci
+    3. 生成当前用户的SSH公钥并发布到部署环境上去。
+       注：这里的当前用户名是go，生成SSH公钥时需要切换到这个用户
