@@ -35,6 +35,7 @@
 		<property name="address" column="address"/>
 		<property name="city" column="city"/>
 		<property name="telephone" column="telephone"/>
+        <property name="email" column="email"/>
 		<set name="petsInternal" inverse="true" cascade="all">
 			<key column="owner_id"/>
 			<one-to-many class="org.springframework.samples.petclinic.Pet"/>

@@ -6,6 +6,7 @@ import java.util.Date;
 
 import javax.persistence.EntityManager;
 
+import org.junit.Test;
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.samples.petclinic.Clinic;
 import org.springframework.samples.petclinic.Owner;
@@ -73,6 +74,7 @@ public abstract class AbstractJpaClinicTests extends AbstractJpaTests {
 		this.sharedEntityManager.createQuery("SELECT RUBBISH FROM RUBBISH HEAP").executeUpdate();
 	}
 
+    @Test
 	public void testApplicationManaged() {
 		EntityManager appManaged = this.entityManagerFactory.createEntityManager();
 		appManaged.joinTransaction();
@@ -115,7 +117,9 @@ public abstract class AbstractJpaClinicTests extends AbstractJpaTests {
 	public void testLoadOwner() {
 		Owner o1 = this.clinic.loadOwner(1);
 		assertTrue(o1.getLastName().startsWith("Franklin"));
-		Owner o10 = this.clinic.loadOwner(10);
+		assertEquals(null, o1.getEmail());
+
+        Owner o10 = this.clinic.loadOwner(10);
 		assertEquals("Carlos", o10.getFirstName());
 
 		// Check lazy loading, by ending the transaction

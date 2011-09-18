@@ -1,0 +1,1 @@
+ALTER TABLE owners add email text;

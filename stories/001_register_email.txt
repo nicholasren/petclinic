@@ -1,0 +1,4 @@
+As a vet,
+I want to record owner's email,
+So the system will sent notification email to them.
+
