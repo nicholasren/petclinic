@@ -117,7 +117,6 @@ public abstract class AbstractJpaClinicTests extends AbstractJpaTests {
 	public void testLoadOwner() {
 		Owner o1 = this.clinic.loadOwner(1);
 		assertTrue(o1.getLastName().startsWith("Franklin"));
-		assertEquals(null, o1.getEmail());
 
         Owner o10 = this.clinic.loadOwner(10);
 		assertEquals("Carlos", o10.getFirstName());

@@ -27,8 +27,6 @@ public class Owner extends Person {
 
 	private Set<Pet> pets;
 
-    private String email;
-
 
     public String getAddress() {
 		return this.address;
@@ -124,16 +122,6 @@ public class Owner extends Person {
 
 		.append("telephone", this.telephone)
 
-        .append("email", this.email)
-
 		.toString();
 	}
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
