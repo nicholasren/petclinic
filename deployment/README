@@ -1,3 +1,15 @@
-1. install git
-2. install puppet
-3. clone demo
+to deploy package to remote environment, you should:
+  1)set up database:
+    . modify remote-setup-database.sh, change target_jdbc_url to your own data server.
+    . run script remote-setup-database.sh to set up database.
+
+  2)deploy to remote environment:
+    . generate your local ssh public key, and add this public key into the remote environment's authorized_keys.
+      reference link: (http://www.sar4.com/2011/08/21/ssh%E5%AF%86%E9%92%A5%E5%AF%B9%E7%9A%84%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95.html)
+
+    . modify remote-deploy.sh modify these variables to your environment (target_username, target_ip, target_deploy_path, target_jdbc_url)
+
+    . run command "mvn package", this instruction will create a package named "petclinic.war" in directory "target/"
+
+    . run script remote-deploy.sh.
+
