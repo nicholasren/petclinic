@@ -14,12 +14,12 @@
 
 #these export is just for testing
 #export target_username=root
-#export target_ip=192.168.137.60
-#export target_deploy_path=/tmp/tomcat6
-#export target_jdbc_url=jdbc:mysql://192.168.137.60:3306/petclinic
+#export target_ip=10.18.3.205
+#export target_deploy_path=/tomcat6
+#export target_jdbc_url=jdbc:mysql://10.18.3.205:3306/petclinic
 
 time=$(date '+%Y%m%d%H%M%S' ) \
-&& deploy_path=/tmp/$time \
+&& deploy_path=/$time \
 && ssh $target_username@$target_ip "bash $target_deploy_path/bin/shutdown.sh \
     && mkdir $deploy_path "\
 && scp  target/petclinic.war $target_username@$target_ip:/tmp \
