@@ -1,0 +1,1 @@
+export DISPLAY=:0.0 && mvn jbehave:run-stories-as-embeddables
