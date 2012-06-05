@@ -71,15 +71,15 @@
     -->
     <parameter>
       <name>url</name>
-      <value>jdbc:mysql://localhost:3306/petclinic?autoReconnect=true</value>
+      <value>${jdbc.url}</value>
     </parameter>
     <parameter>
       <name>username</name>
-      <value>pc</value>
+      <value>${jdbc.username}</value>
     </parameter>
     <parameter>
       <name>password</name>
-      <value>pc</value>
+      <value>${jdbc.password}</value>
     </parameter>
     
     <parameter>

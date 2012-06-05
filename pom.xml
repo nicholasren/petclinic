@@ -15,8 +15,8 @@
         <targetJdk>1.6</targetJdk>
         <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
         <jdbc.url>jdbc:mysql://localhost:3306/petclinic</jdbc.url>
-        <jdbc.username>pc</jdbc.username>
-        <jdbc.password>pc</jdbc.password>
+        <jdbc.username>root</jdbc.username>
+        <jdbc.password></jdbc.password>
         <jdbc.dbms>mysql</jdbc.dbms>
     </properties>
 

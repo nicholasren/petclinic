@@ -1,7 +1,6 @@
-
-#export target_jdbc_url="jdbc:mysql://192.168.137.60:3306/petclinic"
-#export target_jdbc_username="pc"
-#export target_jdbc_password="pc"
+export target_jdbc_url="jdbc:mysql://localhost:3306/mysql"
+export target_jdbc_username="root"
+export target_jdbc_password=""
 #set up database
 
 
