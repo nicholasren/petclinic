@@ -12,11 +12,11 @@ task :package do
   system "mvn package"
 end
 
-task :deploy => :package do
+task :deploy do
   system "cp target/petclinic.war tomcat/server/webapps/"
 end
 
-task :start => [:deploy, :clean] do
+task :start do
   system "tomcat/server/bin/shutdown.sh &&  tomcat/server/bin/startup.sh"
 end
 
