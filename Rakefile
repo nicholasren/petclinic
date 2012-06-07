@@ -25,6 +25,9 @@ task :clean do
 end
 
 namespace :quality do
+  task :unit do
+    system "mvn test"
+  end
   task :functional do
     system "mvn jbehave:run-stories-as-embeddables"
   end
